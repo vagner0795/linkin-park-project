@@ -1,37 +1,131 @@
+/* RESET DA PAGINA  */
+
 /* HEADER STYLES */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    padding: 50px 100px;
-}
-.logo img{
-    width: 80px;
-}
-
- nav ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 40px 100px;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  background-color: #111111;
+  transition: all .5s ease-in-out;
+  border-bottom: 1px solid #808080;
 }
 
-li a{
-    font-size: 20px;
-    color: #000000;
-    text-transform: uppercase;
+.logo img {
+  width: 80px;
+  filter: invert(80);
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+li .link {
+  font-size: 20px;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  transition: all .8s ease-in-out;
+  border-bottom:1px solid transparent ;
+  padding-bottom: 5px;
+}
+
+.link:hover{
+  letter-spacing: 3px;
+  color: #0097ff;
+  border-bottom: 1px solid #0097ff;
+}
+.container-geral {
+  width: 100%;
+  height: 100vh;
+}
 
 /* HOME STYLES */
+.container-home {
+  background-image: url("../assets/home-image.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.container-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container-home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+}
 
 
 /* SOBRE STYLES */
+.container-sobre {
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.container-text{
+  width: 800px;
+  line-height: 30px;
+  color: #c1c1c1;
+}
+
+.container-cards{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 200px;
+  height: 300px;
+  filter: grayscale(100);
+  transition: all .6s ease-in-out;
+}
+
+.card:hover{
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
 
 
 /* ALBUNS STYLES */
-
 
 /* CONTATOS STYLES */

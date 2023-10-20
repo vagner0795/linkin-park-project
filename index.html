@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/globalStyles.css">
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="shortcut icon" href="./src/assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Linkin Park</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -15,26 +21,56 @@
         </div>
         <nav>
             <ul>
-                <li><a class="link" href="#">Home</a></li>
-                <li><a class="link" href="#">Sobre</a></li>
-                <li><a class="link" href="#">Albuns</a></li>
-                <li><a class="link" href="#">Contatos</a></li>
+                <li><a class="link" href="#home">Home</a></li>
+                <li><a class="link" href="#about">Sobre</a></li>
+                <li><a class="link" href="#albums">Albuns</a></li>
+                <li><a class="link" href="#contact">Contatos</a></li>
             </ul>
         </nav>
 
     </header>
-    <section class="container-home">
+    <section id="home" class="container-geral container-home">
+
 
     </section>
-    <section class="container-sobre">
+    <section id="about" class="container-geral container-sobre">
+        <div class="container-text">
+            <h3>Linkin Park é uma banda de rock alternativo formada em 1996 em Agoura Hills, Califórnia. Seu álbum de
+                estreia, "Hybrid Theory", lançado em 2000, os levou ao reconhecimento mundial. A banda foi fundada por
+                Mike Shinoda e Brad Delson, e inicialmente se chamava Xero antes de adotar o nome Linkin Park. Com uma
+                combinação única de rock, rap e eletrônica, eles conquistaram fãs com músicas como "In the End" e
+                "Crawling". Embora tenham enfrentado a trágica perda do vocalista Chester Bennington em 2017, a banda
+                continua a ser uma influência e seu legado perdura na música e no coração dos fãs.</h3>
+        </div>
+        <div class="container-cards">
+            <div class="card">
+                <img src="./src/assets/about-chester.jpg" alt="membro da banda">
+            </div>
+            <div class="card">
+                <img src="./src/assets/about-mike.jpg" alt="membro da banda">
+            </div>
+            <div class="card">
+                <img src="./src/assets/about-joe.jpg" alt="membro da banda">
+            </div>
+            <div class="card">
+                <img src="./src/assets/about-rob.jpg" alt="membro da banda">
+            </div>
+            <div class="card">
+                <img src="./src/assets/about-dave.jpg" alt="membro da banda">
+            </div>
+            <div class="card">
+                <img src="./src/assets/about-brad.jpg" alt="membro da banda">
+            </div>
+
+        </div>
+    </section>
+    <section id="albums" class="container-geral container-albuns">
 
     </section>
-    <section class="container-albuns">
+    <section id="contact" class="container-geral container-contatos">
 
     </section>
-    <section class="container-contatos">
 
-    </section>
-    
 </body>
+
 </html>
